@@ -11,94 +11,50 @@
 <body>
 
     <header class="header"></header>
+
     <main>
         <div class="container d-flex flex-column">
+
+            <div class="popup d-flex justify-content-between align-items-center">
+
+                <div class="popup__selected-filter position-relative">
+                    <button class="jobs__button popup__button">Frontend
+                    </button>
+                    <span class="popup__img-box d-flex">
+                        <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark"></span>
+                </div>
+                <p class="popup__clear-btn m-0 p-0">Clear</p>
+            </div>
 
             <div
                 class="jobs__box new-job-offer d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/photosnap.svg" alt="company logo">
                 <div class="jobs__offer">
-                    <div class="jobs__header d-flex align-items-end gap-3 gap-md-2">
-                        <p class="jobs__company-name me-4 me-md-3 mb-md-0">Photosnap</p>
-                        <button class="badge badge-new">new!</button>
-                        <button class="badge badge-featured">featured</button>
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Photosnap</p>
+                        <button class="jobs__header__badge jobs__header__badge--new">new!</button>
+                        <button class="jobs__header__badge jobs__header__badge--featured">featured</button>
                     </div>
-                    <p class="jobs__offered-job m-md-0 my-md-1">Senior Frontend Developer </p>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Senior Frontend Developer </p>
                     <p class="jobs__job-offer d-flex align-items-center
                     pb-1 p-md-1 m-md-0">
                         <span>1d ago</span>
-                        <span class="dot">Full Time</span>
-                        <span class="dot">USA only</span>
+                        <span class="dot">&bull;</span>
+                        <span>Full Time</span>
+                        <span class="dot">&bull;</span>
+                        <span>USA only</span>
                     </p>
                 </div>
                 <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
-                    <button class="button">Frontend</button>
-                    <button class="button">Senior</button>
-                    <button class="button">HTML</button>
-                    <button class="button">CSS</button>
-                    <button class="button">JavaScript</button>
+                    <button class="jobs__button">Frontend</button>
+                    <button class="jobs__button">Senior</button>
+                    <button class="jobs__button">HTML</button>
+                    <button class="jobs__button">CSS</button>
+                    <button class="jobs__button">JavaScript</button>
                 </div>
             </div>
-
-
-
-
-
-
-
-            <div class="jobs__box new-job-offer py-5 position-relative">
-                <img class="jobs__logo position-absolute" src="../dist/img/photosnap.svg" alt="company logo">
-                <div class="jobs__offer">
-                    <div class="jobs__header d-flex gap-3">
-                        <p class="jobs__company-name me-4">Photosnap</p>
-                        <button class="badge badge-new">new!</button>
-                        <button class="badge badge-featured">featured</button>
-                    </div>
-                    <p class="jobs__job-title">Senior Frontend Developer </p>
-                    <p class="jobs__job-offer d-flex align-items-center gap-5
-                    pb-1">
-                        <span>1d ago</span>
-                        <span class="dot">Full Time</span>
-                        <span class="dot">USA only</span>
-                    </p>
-                </div>
-                <div class="jobs__tags d-flex gap-4 flex-wrap">
-                    <button class="button">Frontend</button>
-                    <button class="button">Senior</button>
-                    <button class="button">HTML</button>
-                    <button class="button">CSS</button>
-                    <button class="button">JavaScript</button>
-                </div>
-            </div>
-            <div class="jobs__box new-job-offer py-5 position-relative">
-                <img class="jobs__logo position-absolute" src="../dist/img/photosnap.svg" alt="company logo">
-                <div class="jobs__offer">
-                    <div class="jobs__header d-flex gap-3">
-                        <p class="jobs__company-name me-4">Photosnap</p>
-                        <button class="badge badge-new">new!</button>
-                        <button class="badge badge-featured">featured</button>
-                    </div>
-                    <p class="jobs__job-title">Senior Frontend Developer </p>
-                    <p class="jobs__job-offer d-flex align-items-center gap-5
-                    pb-1">
-                        <span>1d ago</span>
-                        <span class="dot">Full Time</span>
-                        <span class="dot">USA only</span>
-                    </p>
-                </div>
-                <div class="jobs__tags d-flex gap-4 flex-wrap ">
-                    <button class="button">Frontend</button>
-                    <button class="button">Senior</button>
-                    <button class="button">HTML</button>
-                    <button class="button">CSS</button>
-                    <button class="button">JavaScript</button>
-                </div>
-            </div>
-
         </div>
     </main>
-
-
 
     <!-- @include 'scripts.kit' -->
 </body>
