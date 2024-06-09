@@ -17,12 +17,19 @@
 
             <div class="popup d-flex justify-content-between align-items-center">
 
-                <div class="popup__selected-filter-box position-relative">
-                    <button class="popup__button">Frontend
-                    </button>
-                    <span class="popup__img-box d-flex">
-                        <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark"></span>
+                <div class="popup__selected-filter-box d-flex gap-3">
+                  
+                    <div class="tag-box d-flex align-items-center">
+                        <button class="popup__button">Frontend
+                        </button>
+                        <div onclick="deleteTag()" class="popup__img-box d-flex align-items-center">
+                            <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark">
+                        </div>
+
+                    </div>
+
                 </div>
+
                 <p class="popup__clear-btn m-0 p-0">Clear</p>
             </div>
 
@@ -53,6 +60,232 @@
                     <button class="jobs__button">JavaScript</button>
                 </div>
             </div>
+
+            <div
+                class="jobs__box new-job-offer d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/manage.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Manage</p>
+                        <button class="jobs__header__badge jobs__header__badge--new">new!</button>
+                        <button class="jobs__header__badge jobs__header__badge--featured">featured</button>
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Fullstack Developer </p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>1d ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Part Time</span>
+                        <span class="dot">&bull;</span>
+                        <span>Remote</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Fullstack</button>
+                    <button class="jobs__button">Midweight</button>
+                    <button class="jobs__button">Python</button>
+                    <button class="jobs__button">React</button>
+                </div>
+            </div>
+
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/account.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Account</p>
+                        <button class="jobs__header__badge jobs__header__badge--new">new!</button>
+
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Junior Frontend Developer </p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>2d ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Part Time</span>
+                        <span class="dot">&bull;</span>
+                        <span>USA only</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Frontend</button>
+                    <button class="jobs__button">Junior</button>
+                    <button class="jobs__button">Sass</button>
+                    <button class="jobs__button">React</button>
+                    <button class="jobs__button">JavaScript</button>
+                </div>
+            </div>
+
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/myhome.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">MyHome</p>
+
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Junior Frontend Developer </p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>5d ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Contract</span>
+                        <span class="dot">&bull;</span>
+                        <span>USA only</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Frontend</button>
+                    <button class="jobs__button">Junior</button>
+                    <button class="jobs__button">CSS</button>
+                    <button class="jobs__button">JavaScript</button>
+                </div>
+            </div>
+
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/loop-studios.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Loop Studios</p>
+
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Software Engineer</p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>1w ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Fulltime</span>
+                        <span class="dot">&bull;</span>
+                        <span>Worldwide</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Fullstack</button>
+                    <button class="jobs__button">Midweight</button>
+                    <button class="jobs__button">JavaScript</button>
+                    <button class="jobs__button">Sass</button>
+                    <button class="jobs__button">Ruby</button>
+                </div>
+            </div>
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/faceit.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">FaceIt</p>
+
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Software Engineer</p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>2w ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Fulltime</span>
+                        <span class="dot">&bull;</span>
+                        <span>UK only</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Backend</button>
+                    <button class="jobs__button">Junior</button>
+                    <button class="jobs__button">Ruby</button>
+                    <button class="jobs__button">RoR</button>
+                </div>
+            </div>
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/shortly.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Shortly</p>
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Junior Developer</p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>2w ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Fulltime</span>
+                        <span class="dot">&bull;</span>
+                        <span>Worldwide</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Frontend</button>
+                    <button class="jobs__button">Junior</button>
+                    <button class="jobs__button">HTML</button>
+                    <button class="jobs__button">Sass</button>
+                    <button class="jobs__button">JavaScript</button>
+                </div>
+            </div>
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/insure.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Insure</p>
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Junior Frontend Developer</p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>2w ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Fulltime</span>
+                        <span class="dot">&bull;</span>
+                        <span>USA only</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Frontend</button>
+                    <button class="jobs__button">Junior</button>
+                    <button class="jobs__button">Vue</button>
+                    <button class="jobs__button">JavaScript</button>
+                    <button class="jobs__button">Sass</button>
+                </div>
+            </div>
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/eyecam-co.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">Eyecam Co.</p>
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Full Stack Engineer</p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>3w ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Fulltime</span>
+                        <span class="dot">&bull;</span>
+                        <span>Worldwide</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Fullstack</button>
+                    <button class="jobs__button">Midweight</button>
+                    <button class="jobs__button">JavaScript</button>
+                    <button class="jobs__button">Django</button>
+                    <button class="jobs__button">Python</button>
+                </div>
+            </div>
+            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+                <img class="jobs__logo" src="../dist/img/the-air-filter-company.svg" alt="company logo">
+                <div class="jobs__offer me-md-3 me-lg-0">
+                    <div class="jobs__header d-flex gap-3 gap-md-2">
+                        <p class="jobs__company-name me-4 me-md-3 mb-0">The Air Filter Company</p>
+                    </div>
+                    <p class="jobs__offered-job m-md-0 my-md-1 ">Front-end Dev</p>
+                    <p class="jobs__job-offer d-flex align-items-center
+                    pb-1 p-md-1 m-md-0">
+                        <span>1mo ago</span>
+                        <span class="dot">&bull;</span>
+                        <span>Part Time</span>
+                        <span class="dot">&bull;</span>
+                        <span>Worldwide</span>
+                    </p>
+                </div>
+                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                    <button class="jobs__button">Frontend</button>
+                    <button class="jobs__button">Junior</button>
+                    <button class="jobs__button">React</button>
+                    <button class="jobs__button">Sass</button>
+                    <button class="jobs__button">JavaScript</button>
+                </div>
+            </div>
+
         </div>
     </main>
 
