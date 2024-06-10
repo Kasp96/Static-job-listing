@@ -15,28 +15,28 @@
 
 <body>
 
-    <header class="header"></header>
+    <header class="header position-relative"></header>
+
+    <div class="container-lg position-absolute top-0">
+        <div class="popup justify-content-between align-items-center">
+            <div class="popup__selected-filter-box d-flex gap-3">
+                <!-- <div onclick="removeTag(tagID)" class="tag-box d-flex align-items-center">
+                <button class="popup__button">Frontend
+                </button>
+                <div class="popup__img-box d-flex align-items-center">
+                    <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark">
+                </div>
+            </div> -->
+            </div>
+            <p class="popup__clear-btn m-0 p-0">Clear</p>
+        </div>
+    </div>
 
     <main>
+
         <div class="container-lg d-flex flex-column">
 
-            <div class="popup d-flex justify-content-between align-items-center">
 
-                <div class="popup__selected-filter-box d-flex gap-3">
-                  
-                    <div class="tag-box d-flex align-items-center">
-                        <button class="popup__button">Frontend
-                        </button>
-                        <div onclick="deleteTag()" class="popup__img-box d-flex align-items-center">
-                            <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark">
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <p class="popup__clear-btn m-0 p-0">Clear</p>
-            </div>
 
             <div
                 class="jobs__box new-job-offer d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
