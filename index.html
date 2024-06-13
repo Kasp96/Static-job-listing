@@ -15,31 +15,29 @@
 
 <body>
 
-    <header class="header position-relative"></header>
-
-    <div class="container-lg position-absolute top-0">
-        <div class="popup justify-content-between align-items-center">
-            <div class="popup__selected-filter-box d-flex gap-3">
-                <!-- <div onclick="removeTag(tagID)" class="tag-box d-flex align-items-center">
-                <button class="popup__button">Frontend
-                </button>
-                <div class="popup__img-box d-flex align-items-center">
-                    <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark">
+    <header class="header position-relative">
+        <div class="container-lg position-absolute top-50 start-50 translate-middle">
+            <div class="popup justify-content-between align-items-center">
+                <div class="popup__selected-filter-box d-flex gap-3 flex-wrap">
+                    <!-- <div class="tag-box d-flex align-items-center">
+                        <button class="popup__button">Frontend
+                        </button>
+                        <div onclick="removeTag()" class="popup__img-box d-flex align-items-center">
+                            <img class="popup__close-mark" src="../dist/img/icon-remove.svg" alt="close mark">
+                        </div>
+                    </div> -->
                 </div>
-            </div> -->
+                <p class="popup__clear-btn m-0 p-0">Clear</p>
             </div>
-            <p class="popup__clear-btn m-0 p-0">Clear</p>
         </div>
-    </div>
+    </header>
+
+
 
     <main>
-
         <div class="container-lg d-flex flex-column">
 
-
-
-            <div
-                class="jobs__box new-job-offer d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box new-job-offer flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/photosnap.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -66,8 +64,7 @@
                 </div>
             </div>
 
-            <div
-                class="jobs__box new-job-offer d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box new-job-offer  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/manage.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -93,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/account.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -120,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/myhome.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -145,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/loop-studios.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -170,7 +167,7 @@
                     <button class="jobs__button">Ruby</button>
                 </div>
             </div>
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/faceit.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -194,7 +191,7 @@
                     <button class="jobs__button">RoR</button>
                 </div>
             </div>
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/shortly.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -210,7 +207,7 @@
                         <span>Worldwide</span>
                     </p>
                 </div>
-                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                <div class="jobs__tags d-flex  gap-4 flex-wrap ms-md-auto">
                     <button class="jobs__button">Frontend</button>
                     <button class="jobs__button">Junior</button>
                     <button class="jobs__button">HTML</button>
@@ -218,7 +215,7 @@
                     <button class="jobs__button">JavaScript</button>
                 </div>
             </div>
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/insure.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -242,7 +239,7 @@
                     <button class="jobs__button">Sass</button>
                 </div>
             </div>
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/eyecam-co.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -266,7 +263,7 @@
                     <button class="jobs__button">Python</button>
                 </div>
             </div>
-            <div class="jobs__box d-flex flex-column flex-md-row align-items-md-center py-5 position-relative">
+            <div class="jobs__box  flex-column flex-md-row align-items-md-center py-5 position-relative">
                 <img class="jobs__logo" src="../dist/img/the-air-filter-company.svg" alt="company logo">
                 <div class="jobs__offer me-md-3 me-lg-0">
                     <div class="jobs__header d-flex gap-3 gap-md-2">
@@ -282,7 +279,7 @@
                         <span>Worldwide</span>
                     </p>
                 </div>
-                <div class="jobs__tags d-flex gap-4 flex-wrap ms-md-auto">
+                <div class="jobs__tags d-flex  gap-4 flex-wrap ms-md-auto">
                     <button class="jobs__button">Frontend</button>
                     <button class="jobs__button">Junior</button>
                     <button class="jobs__button">React</button>
