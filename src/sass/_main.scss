@@ -1,0 +1,164 @@
+@use 'mixins' as *;
+
+body {
+	background-color: var(--bg-clr);
+}
+.header {
+	min-height: 45vw;
+	background-image: url('../img/bg-header-mobile.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: var(--light-cyan);
+}
+.container-lg {
+	.popup {
+		display: none;
+		padding: 20px;
+		background-color: #fff;
+		border-radius: 4px;
+		box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.1);
+
+		&__button {
+			@include buttons;
+			border-radius: 4px 0 0 4px;
+		}
+		&__img-box {
+			height: 100%;
+			background-color: var(--light-cyan);
+			border-bottom-right-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+		&__img-box:hover {
+			background-color: var(--very-dark-cyan);
+		}
+		&__close-mark {
+			padding: 8px;
+			background-color: transparent;
+		}
+
+		&__clear-btn {
+			font-size: 1.65rem;
+			font-family: var(--ff-heading);
+			font-weight: 500;
+			color: var(--dark-cyan);
+		}
+		&__clear-btn:hover {
+			text-decoration: underline;
+			color: var(--light-cyan);
+			text-underline-offset: 2px;
+		}
+	}
+}
+
+.container-lg {
+	margin-top: 5rem;
+	padding-inline: 2.25rem;
+	gap: 4rem;
+
+	.hide {
+		display: none;
+	}
+
+	.dot {
+		font-size: 1.75rem;
+		color: var(--dark-cyan-50);
+	}
+
+	.jobs {
+		&__header {
+			margin-bottom: 1rem;
+
+			&__badge {
+				padding: 0 10px;
+				max-height: 22px;
+				font-size: 1.3rem;
+				text-transform: uppercase;
+				font-family: var(--ff-heading);
+				font-weight: 500;
+				line-height: 2;
+				color: #fff;
+				border-radius: 15px;
+
+				&--new {
+					background-color: var(--light-cyan);
+				}
+				&--featured {
+					background-color: var(--very-dark-cyan);
+				}
+			}
+		}
+
+		&__logo {
+			position: absolute;
+			width: 4.5rem;
+			top: -2.15rem;
+		}
+		&__box {
+			position: relative;
+			display: flex;
+			padding: 0 2.25rem;
+			background-color: #fff;
+			border-radius: 6px;
+			box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.1);
+			z-index: 0;
+		}
+		&__box[data-new]::before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			border-radius: 6px;
+			border-left: 5px solid var(--light-cyan);
+			z-index: -1;
+		}
+
+		&__company-name,
+		&__offered-job {
+			font-family: var(--ff-heading);
+			font-weight: 700;
+		}
+		&__company-name {
+			font-size: 1.5rem;
+			color: var(--light-cyan);
+		}
+		&__offered-job {
+			font-size: 1.55rem;
+		}
+		&__offered-job:hover {
+			color: var(--light-cyan);
+		}
+		&__job-offer {
+			font-size: 1.6rem;
+			color: var(--dark-cyan);
+			font-family: var(--ff-heading);
+			font-weight: 500;
+			gap: 0.75rem;
+		}
+		&__tags {
+			padding-top: 1.5rem;
+			border-top: 1px solid var(--dark-cyan-50);
+		}
+		&__button {
+			@include buttons;
+			border-radius: 4px;
+		}
+		&__button:hover {
+			color: #fff;
+			background-color: var(--light-cyan);
+		}
+	}
+}
+.more {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-block: 2rem;
+	padding: 5px 15px;
+	font-size: 2rem;
+	background-color: orange;
+	border-radius: 8px;
+	text-transform: uppercase;
+}

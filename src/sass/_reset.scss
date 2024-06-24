@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button,
+.jobs__offered-job,
+.popup__close-mark,
+.popup__clear-btn,
+.popup__img-box {
+	border: none;
+	cursor: pointer;
+}
+.jobs__button,
+.popup__close-mark,
+.jobs__offered-job,
+.popup__clear-btn,
+.popup__img-box {
+	transition: 0.3s;
+}
+
+textarea {
+	resize: vertical;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
